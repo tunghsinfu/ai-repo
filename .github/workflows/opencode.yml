@@ -29,5 +29,8 @@ jobs:
         uses: anomalyco/opencode/github@latest
         env:
           OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
+          OPENCODE_SERVER_USERNAME: ${{ variables.OPENCODE_SERVER_USERNAME }}
+          OPENCODE_SERVER_PASSWORD: ${{ secrets.OPENCODE_SERVER_PASSWORD }}
+          OPENCODE_HOST: ${{ variables.OPENCODE_HOST }}
         with:
           model: opencode/big-pickle
